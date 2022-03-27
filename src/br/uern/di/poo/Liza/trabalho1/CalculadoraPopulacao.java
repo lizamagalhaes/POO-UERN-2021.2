@@ -23,4 +23,17 @@ public class CalculadoraPopulacao {
             ano++;
         }
     }
+    public Integer retornaAnoQuandoPopulacaoAtingeDobro(){
+        Integer ano = 0;
+        for (int i = 0; i < listaDemonstrativoPopulacional.size(); i++) {
+            DemonstrativoPopulacional demonstrativoPopulacionalAtual = listaDemonstrativoPopulacional.get(i);
+            Double valorPopulacional = demonstrativoPopulacionalAtual.getPopulacaoEsperada();
+            Double valorPopulacaoOriginal = listaDemonstrativoPopulacional.get(0).getPopulacaoOriginal();
+            Double valorPopulacionalEmDobro = valorPopulacaoOriginal * 2;
+            if (valorPopulacional >= valorPopulacionalEmDobro){
+                return demonstrativoPopulacionalAtual.getAno();
+            }
+        }
+        return ano;
+    }
 }

@@ -17,6 +17,22 @@ public class DemonstrativoPopulacional {
         this.aumentoPopulacao = aumentoPopulacao;
     }
 
+    public Integer getAno() {
+        return ano;
+    }
+
+    public Double getPopulacaoOriginal() {
+        return populacaoOriginal;
+    }
+
+    public Double getPopulacaoEsperada() {
+        return populacaoEsperada;
+    }
+
+    public Double getAumentoPopulacao() {
+        return aumentoPopulacao;
+    }
+
     @Override
     public String toString() {
         return "Ano = " + ano +

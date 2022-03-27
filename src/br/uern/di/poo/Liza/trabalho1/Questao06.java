@@ -8,5 +8,7 @@ public class Questao06 {
         for (int i = 0; i < calculadoraPopulacao.getListaDemonstrativoPopulacional().size(); i++) {
             System.out.println(calculadoraPopulacao.getListaDemonstrativoPopulacional().get(i));
         }
+
+        System.out.println("\n O ano em que a população será o dobro é: " + calculadoraPopulacao.retornaAnoQuandoPopulacaoAtingeDobro());
     }
 }
