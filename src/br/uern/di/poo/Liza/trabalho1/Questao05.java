@@ -8,6 +8,10 @@ public class Questao05 {
         System.out.println("Digite um numero com 4 digitos: ");
         Scanner input = new Scanner(System.in);
         Integer digitos = input.nextInt();
-        criptografia.encriptar(digitos);
+        char[] digitosEncriptados = criptografia.encriptar(digitos);
+        String digitosEncriptadosEmString = String.valueOf(digitosEncriptados);
+        System.out.println("Digitos encriptados: " + digitosEncriptadosEmString);
+        String digitosDecriptados = criptografia.decriptar(digitosEncriptados);
+        System.out.println(digitosDecriptados);
     }
 }
